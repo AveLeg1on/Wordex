@@ -1,0 +1,31 @@
+﻿<Window x:Class="Wordex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wordex"
+        mc:Ignorable="d"
+        Title="MainWindow"  Background="LimeGreen"  Height="360" Width="810" >
+    <Grid   Background="DarkOrange">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="810"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="344.04"/>
+        </Grid.RowDefinitions>
+        <ListBox Foreground="BurlyWood" Background="SeaGreen" Name="LB" Margin="0,0,81,136" />
+        <TextBox Foreground="BurlyWood" Background="#FF6E4D0B" x:Name="Field" HorizontalAlignment="Left" Margin="569,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Field_KeyDown"/>
+        <Menu Margin="734,0,0,276"  Background="DarkOrange"  >
+            <MenuItem Header="Список"  Background="DarkOrange" Height="39">
+                <MenuItem Click="Modernization_Click" Background="DarkOrange"  Header="Модифицировать"/>
+                <MenuItem  Background="DarkOrange" Header="Очистить" Click="Destroy_Click"/>
+            </MenuItem>
+            <MenuItem Background="DarkOrange" Click="FAQ" Header="FAQ"/>
+       
+          
+        </Menu>
+        <Label FontFamily="Agency FB" Foreground="Black" Name="helps" HorizontalAlignment="Left" Margin="0,213,0,0" VerticalAlignment="Top" Height="96" Width="569"/>
+
+
+    </Grid>
+</Window>
