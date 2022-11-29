@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wordex"
         mc:Ignorable="d"
-        Title="MainWindow"  Background="LimeGreen"  Height="360" Width="810" >
-    <Grid   Background="DarkOrange">
+        Title="MainWindow"  Background="LimeGreen"  Height="316" Width="810" >
+    <Grid   Background="DarkOrange" Margin="0,0,-18,-4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="810"/>
         </Grid.ColumnDefinitions>
@@ -14,17 +14,17 @@
             <RowDefinition Height="344.04"/>
         </Grid.RowDefinitions>
         <ListBox Foreground="BurlyWood" Background="SeaGreen" Name="LB" Margin="0,0,81,136" />
-        <TextBox Foreground="BurlyWood" Background="#FF6E4D0B" x:Name="Field" HorizontalAlignment="Left" Margin="569,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Field_KeyDown"/>
+        <TextBox ToolTip="Для записи в листбокс нажимайте Enter" Foreground="BurlyWood" Background="#FF6E4D0B" x:Name="Field" HorizontalAlignment="Left" Margin="652,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Field_KeyDown"/>
         <Menu Margin="734,0,0,276"  Background="DarkOrange"  >
             <MenuItem Header="Список"  Background="DarkOrange" Height="39">
                 <MenuItem Click="Modernization_Click" Background="DarkOrange"  Header="Модифицировать"/>
                 <MenuItem  Background="DarkOrange" Header="Очистить" Click="Destroy_Click"/>
             </MenuItem>
             <MenuItem Background="DarkOrange" Click="FAQ" Header="FAQ"/>
-       
-          
+
+
         </Menu>
-        <Label FontFamily="Agency FB" Foreground="Black" Name="helps" HorizontalAlignment="Left" Margin="0,213,0,0" VerticalAlignment="Top" Height="96" Width="569"/>
+        <Label FontFamily="Agency FB" Foreground="Black" Name="helps" HorizontalAlignment="Left" Margin="0,213,0,0" VerticalAlignment="Top" Height="102" Width="652"/>
 
 
     </Grid>
